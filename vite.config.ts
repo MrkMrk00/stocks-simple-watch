@@ -1,10 +1,9 @@
-import { defineConfig } from 'vite'
-import solid from 'vite-plugin-solid'
+import { defineConfig } from 'vite';
+import solid from 'vite-plugin-solid';
 
 export default defineConfig({
-  root: 'frontend',
-  build: {
-    outDir: 'static',
-  },
-  plugins: [solid()],
+    build: {
+        outDir: 'static',
+    },
+    plugins: [solid()],
 });

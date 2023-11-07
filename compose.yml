@@ -1,0 +1,13 @@
+services:
+    stocks-db:
+        image: postgres:16-alpine
+        restart: always
+        ports:
+          - "5432:5432"
+        volumes:
+            - "./postgres_data:/var/lib/postgresql/data/pgdata"
+        environment:
+            POSTGRES_PASSWORD: "strongpassword"
+            POSTGRES_DB: "stocks"
+            PGDATA: /var/lib/postgresql/data/pgdata
+

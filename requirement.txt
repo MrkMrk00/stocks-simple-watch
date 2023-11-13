@@ -1,3 +1,5 @@
 fastapi
 uvicorn[standard]
 pypika
+yfinance
+psycopq[pool]
